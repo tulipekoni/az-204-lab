@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Image Upload</title>
+  </head>
+  <body>
+    <h1>Test Image Upload</h1>
+    <form
+      action="https://webapp-az-204-lab.azurewebsites.net/upload-image"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <label for="file">Choose image file:</label>
+        <input type="file" id="file" name="file" accept="image/*" required />
+      </div>
+      <div style="margin-top: 10px">
+        <button type="submit">Upload Image</button>
+      </div>
+    </form>
+  </body>
+</html>

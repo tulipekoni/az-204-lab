@@ -80,6 +80,6 @@ app.MapPost("/upload-image", async (IFormFile file, BlobServiceClient blobServic
     {
         return Results.Problem($"Error uploading file: {ex.Message}");
     }
-});
+}).DisableAntiforgery();
 
 app.Run();
